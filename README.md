@@ -7,11 +7,11 @@ Create a fully polished and shippable program that utilizes image processing tec
 
 | |Poor|Adequate|Excellent|
 |-|-|-|-|
-|**Detection (30%)**        |**(10%)**<br>Unable to detect target|**(20%)**<br>Able to detect target sporadically|**(30%)**<br>Able to detect target consistently|
-|**Analysis (20%)**         |**(5%)**<br>Calculate with 50% accuracy|**(15%)**<br>Calculate with 20% accuracy|**(20%)**<br>Calculate with 5% accuracy|
-|**Structure (20%)**        |**(5%)**<br>No structure|**(15%)**<br>Incorrect structure|**(20%)**<br>Proper structure|
-|**Naming Convention (15%)**|**(0%)**<br>No naming convention|**(10%)**<br>Intelligible, but inconsistent, naming convention|**(15%)**<br>Coherent, consistent naming convention|
-|**Documentation (15%)**    |**(0%)**<br>Missing documentation|**(10%)**<br>Minimal documentation for all functions, variables, and calculations|**(15%)**<br>Comprehensive documentation for all functions, variables, and calculations|
+|**Detection<br>(30%)**        |**(10%)**<br>Unable to detect target|**(20%)**<br>Able to detect target sporadically|**(30%)**<br>Able to detect target consistently|
+|**Analysis<br>(20%)**         |**(5%)**<br>Calculate with 50% accuracy|**(15%)**<br>Calculate with 20% accuracy|**(20%)**<br>Calculate with 5% accuracy|
+|**Structure<br>(20%)**        |**(5%)**<br>No structure|**(15%)**<br>Incorrect structure|**(20%)**<br>Proper structure|
+|**Naming Convention<br>(15%)**|**(0%)**<br>No naming convention|**(10%)**<br>Intelligible, but inconsistent, naming convention|**(15%)**<br>Coherent, consistent naming convention|
+|**Documentation<br>(15%)**    |**(0%)**<br>Missing documentation|**(10%)**<br>Minimal documentation for all functions, variables, and calculations|**(15%)**<br>Comprehensive documentation for all functions, variables, and calculations|
 
 ##### Program Structure
 ```
