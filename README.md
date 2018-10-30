@@ -1,4 +1,4 @@
-# Computer Vision Preseason Final Project
+# Computer Vision Preseason Project
 ### Project Guidelines
 Create a fully polished and shippable program that utilizes image processing techniques to calculate **distance**, **azimuth**, and **altitude** of a plus shape (+) target. Program must be written in Python 3 and use OpenCV, NumPy, and other relevant libraries for processing.
 
