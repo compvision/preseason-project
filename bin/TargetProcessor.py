@@ -1,23 +1,27 @@
 import math
 
 class TargetProcessor:
-    d  = 0
-    az = 0
-    al = 0
+    distance  = 0                                       # variable for distance
+    azimuth = 0                                         # variable for azimuth
+    altitude = 0                                        # variable for altitude
 
     def __init__(self):
         pass
 
-    def calculate(self,f,w,iw,x,h):                     # method that calculates Distance, Azimuth, and Altitude
-        self.d = (f*w)/iw
-        self.az = math.atan(x/f)*180/math.pi
-        self.al = math.atan(h/f)*180/math.pi
+# method that calculates Distance, Azimuth, and Altitude
+    def calculate(self,f,w,iw,x,h):
+        self.distance = (f*w)/iw
+        self.azimuth = math.atan(x/f)*180/math.pi
+        self.altitude = math.atan(h/f)*180/math.pi
 
-    def getDistance(self):                              # getter method that returns distance rounded to two decimal places
-        return round(self.d,2)
+# getter method that returns distance rounded to two decimal places
+    def getDistance(self):
+        return round(self.distance,2)
 
-    def getAltitude(self):                              # getter method that returns altitude rounded to four decimal places
-        return round(self.al,4)
+# getter method that returns altitude rounded to four decimal places
+    def getAltitude(self):
+        return round(self.altitude,4)
 
-    def getAzimuth(self):                               # getter method that returns azimuth rounded to four decimal places
-        return round(self.az,4)
+# getter method that returns azimuth rounded to four decimal places
+    def getAzimuth(self):
+        return round(self.azimuth,4)

@@ -7,16 +7,17 @@ import cv2
 actualWidth = int(input("\nEnter actual target width: "))                       # allowing users to input the actual width and thresholds
 minValues = input("Enter min threshold values with spaces separating them(ex. H S V): ")
 maxValues = input("Enter max threshold values with spaces separating them(ex. H S V): ")
-hmin,smin,vmin = minValues.split()
-hmax,smax,vmax = maxValues.split()
-minThreshold = np.array([int(hmin),int(smin),int(vmin)], np.uint8)
-maxThreshold = np.array([int(hmax),int(smax),int(vmax)], np.uint8)
-lightblue = (255, 221, 0)
-focalLength = 700
-degrees = u'\N{DEGREE SIGN}'
+hmin,smin,vmin = minValues.split()                                              # splits the minimum threshold from the user input into the variables needed for the nd array
+hmax,smax,vmax = maxValues.split()                                              # splits the maximum threshold from the user input into the variables needed for the nd array
+minThreshold = np.array([int(hmin),int(smin),int(vmin)], np.uint8)              # holds the minimum threshold values for later use in thresholding
+maxThreshold = np.array([int(hmax),int(smax),int(vmax)], np.uint8)              # holds the maximum threshold values for later use in thresholding
+lightblue = (255, 221, 0)                                                       # variable for the lightblue color
+focalLength = 700                                                               # focal length of camera
+degrees = u'\N{DEGREE SIGN}'                                                    # for degree sign usage
 centimeters = " cm"
 
-def displayValues():                                                            # method that prints out the values in a nice format
+# method that prints out the values in a nice format
+def displayValues():
     print("\n"+"Distance = " + str(proc.getDistance())+centimeters)
     print("Azimuth = " + str(proc.getAzimuth())+degrees)
     print("Angle of Altitude = "+ str(proc.getAltitude())+degrees+"\n")
