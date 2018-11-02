@@ -23,6 +23,9 @@ class Target(object):
     #return width
     def width(self):
         return self.xmax - self.xmin
+    #return height
+    def height(self):
+        return self.ymax - self.ymin
     #return center of target (x, y)
     def center(self):
         return ((self.xmin + self.xmax)/2, (self.ymin + self.ymax)/2)
