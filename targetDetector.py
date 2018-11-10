@@ -62,4 +62,3 @@ contours array is not sent to None"""
     """:returns the thresholded image"""
     def getMask(self):
         return self.mask
-

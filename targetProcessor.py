@@ -52,4 +52,3 @@ self.radiansToDegrees(math.atan(float(H_altitude) / focalLength))
     """:returns altitude"""
     def getAltitude(self):
         return self.altitude
-
